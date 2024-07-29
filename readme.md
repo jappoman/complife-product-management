@@ -86,10 +86,11 @@ npm run build
 
 ## Test
 
-Questo progetto utilizza Jest per eseguire i test. I test sono divisi in tre file principali:
+Questo progetto utilizza Jest per eseguire i test. I test sono divisi in quattro file principali:
 - AppController Test
 - ProductService Test
 - ProductController Test
+- App Test
 
 ### AppController Test
 Il file ```src/app.controller.spec.ts``` contiene i test per il controller principale dell'applicazione. Questi test verificano che il controller restituisca la stringa "Hello World!".
@@ -99,6 +100,9 @@ Il file ```src/product/product.service.spec.ts``` contiene i test per il servizi
 
 ### ProductController Test
 Il file ```src/product/product.controller.spec.ts``` contiene i test per il controller ProductController. Questi test verificano che il controller sia definito e che ritorni correttamente tutti i prodotti.
+
+### App Test
+Il file ```test/app.e2e-spec.ts``` contiene i test per verificare il flusso completo dell'applicazione.
 
 ### Esecuzione dei Test
 Per eseguire i test unitari, utilizza il comando:
