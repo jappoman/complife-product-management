@@ -116,3 +116,6 @@ npm run test:e2e
 ```
 
 Assicurati di trovarti nella directory backend quando esegui questi comandi.
+
+## Export delle API con Bruno
+Per testare le API in modo standalone, il progetto include un'export delle API dall'applicazione Bruno (simile a Postman). È possibile trovare i file di export nella directory ```api-collection/complife-product-management```
