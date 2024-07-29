@@ -41,7 +41,7 @@ npm install
 #### Avvia il backend con Docker Compose:
 
 ```bash
-docker-compose up
+docker-compose up -d
 ```
 ### Setup del Frontend
 Naviga nella directory del frontend:
