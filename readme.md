@@ -22,7 +22,7 @@ Assicurati di avere installato i seguenti strumenti:
 ### Clonazione del Repository
 
 ```bash
-git clone <URL_del_tuo_repository>
+git clone https://github.com/jappoman/complife-product-management.git
 cd complife-product-management
 ```
 
@@ -62,25 +62,20 @@ npm install
 npm run serve
 ```
 
-### Comandi Utili
-#### Backend
+### Altri comandi utili
+#### Spostarsi nel backend
+```bash
+cd backend
+```
 ##### Eseguire i test:
 
 ```bash
 npm run test
 ```
 
-##### Compilare il progetto:
-
+#### Spostarsi nel frontend
 ```bash
-npm run build
-```
-
-#### Frontend
-Avviare il server di sviluppo:
-
-```bash
-npm run serve
+cd frontend
 ```
 
 ##### Compilare il progetto:
@@ -88,3 +83,32 @@ npm run serve
 ```bash
 npm run build
 ```
+
+## Test
+
+Questo progetto utilizza Jest per eseguire i test. I test sono divisi in tre file principali:
+- AppController Test
+- ProductService Test
+- ProductController Test
+
+### AppController Test
+Il file ```src/app.controller.spec.ts``` contiene i test per il controller principale dell'applicazione. Questi test verificano che il controller restituisca la stringa "Hello World!".
+
+### ProductService Test
+Il file ```src/product/product.service.spec.ts``` contiene i test per il servizio ProductService. Questi test verificano che tutte le operazioni CRUD (Create, Read, Update, Delete) funzionino correttamente utilizzando dati mock.
+
+### ProductController Test
+Il file ```src/product/product.controller.spec.ts``` contiene i test per il controller ProductController. Questi test verificano che il controller sia definito e che ritorni correttamente tutti i prodotti.
+
+### Esecuzione dei Test
+Per eseguire i test unitari, utilizza il comando:
+```bash
+npm run test
+```
+
+Per eseguire i test e2e, utilizza il comando:
+```bash
+npm run test:e2e
+```
+
+Assicurati di trovarti nella directory backend quando esegui questi comandi.
